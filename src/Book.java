@@ -3,9 +3,9 @@ public class Book {
 
     private int publicationYear;
 
-    public Author author;
+    public String author;
 
-    public Book(String title, int publicationYear, Author author) {
+    public Book(String title, int publicationYear, String author) {
         this.title = title;
 
         this.publicationYear = publicationYear;
@@ -22,7 +22,7 @@ public class Book {
         return publicationYear;
     }
 
-    public Author getAuthor() {
+    public String getAuthor() {
         return author;
     }
 
