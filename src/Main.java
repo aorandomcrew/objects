@@ -9,6 +9,7 @@ public class Main {
         System.out.println(book2);
         System.out.println();
         System.out.println("это одна и та же книга? - " + book1.equals(book2));
+        System.out.println("Автор один и тот же? - " + author1.equals(author2));
         System.out.println();
         System.out.println("хэш-код первой книги - " + book1.hashCode());
         System.out.println("хэш-код второй книги - " + book2.hashCode());
@@ -16,5 +17,6 @@ public class Main {
         System.out.println("хэш-код первого автора - " + author1.hashCode());
         System.out.println("хэш-код второого автора - " + author2.hashCode());
         System.out.println();
+
     }
 }
