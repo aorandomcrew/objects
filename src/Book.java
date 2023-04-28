@@ -15,21 +15,9 @@ public class Book {
         this.author = author;
     }
 
-    public final String getTitle() {
-        return title;
-    }
-
-    public int getPublicationYear() {
-        return publicationYear;
-    }
-
-    public Author getAuthor() {
-        return author;
-    }
-
     @Override
     public String toString() {
-        return "название книги: \"" + this.getTitle() + "\" " + getAuthor() + " год публикации: " + this.getPublicationYear();
+        return "название книги: \"" + title + "\" " + author + " год публикации: " + publicationYear;
     }
 
     @Override
@@ -37,19 +25,14 @@ public class Book {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
-        return Objects.equals(title, book.getTitle()) &&
-                Objects.equals(author, book.getAuthor()) &&
-                Objects.equals(publicationYear, book.getPublicationYear());
+        return Objects.equals(title, book.title) &&
+                Objects.equals(author, book.author) &&
+                Objects.equals(publicationYear, book.publicationYear);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getTitle(), getAuthor(), getPublicationYear());
-    }
-
-
-    public void setPublicationYear(int publicationYear) {
-        this.publicationYear = publicationYear;
+        return Objects.hash(title, author, publicationYear);
     }
 }
 

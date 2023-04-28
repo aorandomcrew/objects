@@ -16,7 +16,5 @@ public class Main {
         System.out.println("хэш-код первого автора - " + author1.hashCode());
         System.out.println("хэш-код второого автора - " + author2.hashCode());
         System.out.println();
-        book1.setPublicationYear(2017);
-        System.out.println("год последней публикации для первой книги: " + book1.getPublicationYear());
     }
 }
